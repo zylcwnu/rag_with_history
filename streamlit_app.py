@@ -15,7 +15,8 @@ def get_retriever():
     # 定义 Embeddings
     embedding = DoubaoEmbeddings()
     # 向量数据库持久化路径
-    persist_directory = '/root/autodl-tmp/speech_to_text/gen/chroma_db_doubao'
+    # 使用项目内的相对路径（与 streamlit_app.py 同级）
+    persist_directory = os.path.join(os.path.dirname(__file__), "chroma_db_doubao")
     # 加载数据库
     vectordb = Chroma(
         persist_directory=persist_directory,
