@@ -1,0 +1,9 @@
+streamlit
+langchain-core
+langchain-openai
+langchain-community
+openai
+python-dotenv
+chromadb==0.4.24
+tiktoken
+rank-bm25
