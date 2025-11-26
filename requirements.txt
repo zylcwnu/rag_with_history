@@ -4,7 +4,8 @@ langchain-openai
 langchain-community
 openai
 python-dotenv
-chromadb
 tiktoken
 rank-bm25
+chromadb==0.4.22
+numpy==1.23.5
 
